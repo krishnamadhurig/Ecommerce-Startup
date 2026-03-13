@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add a product</h1>
-    <form action="/api/products" method="POST">
-        <label for="product">product Name:</label>
-        <input type="text" id="product" name="productName" required>
+    <h1>Fetching the details</h1>
+    <form onsubmit="onSubmitHandler(event)">
+        <label>product</label>
+        <input id="product" name="productName" />
     <button type="submit">Add product</button>
     </form>
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/js/publicproduct.js"></script>
 </body>
 </html>

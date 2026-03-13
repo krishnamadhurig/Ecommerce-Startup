@@ -11,7 +11,11 @@ const getProductById=(req,res)=>{
     res.send(`Fetching product with ID: ${id}`)
 };
 const postproducts=(req,res)=>{
-    res.send("Adding a new product")
+     const data=req.body
+    // 
+    res.json({value:data.productName})
+   
+    console.log(data)
 }
 const putproducts=(req,res)=>{
     res.send("putting the new product")
