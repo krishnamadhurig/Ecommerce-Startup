@@ -1,7 +1,10 @@
 const path=require('path')
 
 const getProducts=(req,res)=>{
-    res.sendFile(path.join(__dirname,"..","view","product.html"))
+    res.send("Fetching all details")
+}
+const getProductForm=(req,res)=>{
+    res.sendFile(path.join(__dirname,"..","VIEW","product.html"))
 }
 const getProductById=(req,res)=>{
     const id=req.params.id
@@ -21,5 +24,7 @@ module.exports={
     getProductById,
     postproducts,
     putproducts,
-    deleteproducts
+    deleteproducts,
+    getProductForm
+   
 }
